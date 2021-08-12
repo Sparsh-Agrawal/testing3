@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+
+  build:
+    commands:
+      - chmod +x ./scripts/test.sh
+      - ./scripts/test.sh
+
+reports:
+  jest_reports:
+    files:
+      - junit-*.xml
+    file-format: JUNITXML
+    base-directory: output
