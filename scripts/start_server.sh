@@ -1,3 +1,5 @@
+#!/bin/bash
+
 c=$(ls -l /var/www/testing3/ | grep "^d" | wc -l)
 arr1=(/var/www/testing3/*)
 echo ${arr1[@]}
