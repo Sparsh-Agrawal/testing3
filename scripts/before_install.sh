@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ -d /var/www/testing ]
+if [ -d /var/www/testing3 ]
 then
-  cd /var/www/testing
+  cd /var/www/testing3
   pm2 delete all
   rm -fr *
   rm -fr .git*
